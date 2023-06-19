@@ -9,7 +9,7 @@ public class Power {
             result *= numberToPrint;
         }
         // Print the result
-        System.out.printf("%d raised to the power of %d is %d", numberToPrint, power, result);
+        System.out.printf(String.valueOf(power));
     }
 
     public static void main(String[] args) {

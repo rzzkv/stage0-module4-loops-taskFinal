@@ -9,7 +9,7 @@ public class MultiplicationTable {
             // Compute the product of the input number and the current multiplier
             int product = numberTableToPrint * i;
             // Print the product in a formatted string
-            System.out.printf("%d x %d = %d%n", numberTableToPrint, i, product);
+            System.out.printf("%d x %d = %d%n", i, numberTableToPrint, product);
         }
     }
 
@@ -18,7 +18,7 @@ public class MultiplicationTable {
         System.out.print("Enter a positive integer: ");
         int input = scanner.nextInt();
         // Validate the input to ensure it is positive
-        if (input <= 0) {
+        if (input < 0) {
             System.out.println("Invalid input. Please enter a positive integer.");
         } else {
             // Print the multiplication table of the input number
